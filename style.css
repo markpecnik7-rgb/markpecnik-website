@@ -9,9 +9,3 @@
 .coaching .coach-grid img{height:420px}
 @media(max-width:760px){.coaching .section-intro{margin-bottom:25px}.coaching .coach-grid{gap:28px}.coaching .coach-grid img{height:360px}}
 
-/* Coaching photo blends softly into the dark section, like the hero */
-.coaching .coach-grid figure{position:relative;isolation:isolate;overflow:hidden;background:var(--panel)}
-.coaching .coach-grid figure img{display:block;width:100%;height:440px;object-fit:cover;object-position:center 38%;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 15%,#000 86%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 15%,#000 86%,transparent 100%)}
-.coaching .coach-grid figure:after{content:"";position:absolute;inset:0 0 34px;pointer-events:none;background:linear-gradient(to bottom,var(--panel),transparent 16%,transparent 76%,var(--panel));z-index:1}
-.coaching .coach-grid figcaption{position:relative;z-index:2;margin:4px 0 0;text-align:center}
-@media(max-width:760px){.coaching .coach-grid figure img{height:360px}}
