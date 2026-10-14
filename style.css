@@ -123,3 +123,16 @@ footer{border-top:1px solid #38302b}
  .contact-button,.athlete .facts article,nav a,.hero-bottom a,.contact-instagram{transition:none}
  .contact-button:hover{transform:none}
 }
+
+/* Restored red identity and aligned coaching copy */
+:root{--accent:#EF472F;--accent-deep:#B63832}
+.athlete-lines .athlete-last{color:var(--accent)}
+.contact{background:var(--accent-deep);border-top-color:#c95750}
+.contact p{color:#fff0ed}
+.coaching .coach-grid{align-items:start}
+.coaching .coaching-copy{padding-top:0}
+.coaching .section-intro{margin-bottom:12px}
+@media(max-width:760px){
+ .coaching .section-intro{margin-bottom:14px}
+ .coaching .coach-grid{gap:24px}
+}
