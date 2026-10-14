@@ -9,3 +9,7 @@
 .coaching .coach-grid img{height:420px}
 @media(max-width:760px){.coaching .section-intro{margin-bottom:25px}.coaching .coach-grid{gap:28px}.coaching .coach-grid img{height:360px}}
 
+
+/* Collaborations: justified copy and clear closing invitation */
+.collaborations .collaboration-copy p{text-align:justify;text-justify:inter-word;hyphens:none;margin:0 0 20px;max-width:620px}
+.collaborations .collaboration-copy .collaboration-invite{text-align:left;color:#f5f4ef;font-weight:600;margin-top:32px;margin-bottom:0}
