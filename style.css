@@ -140,3 +140,8 @@ footer{border-top:1px solid #38302b}
 /* Collaborations: neutral editorial labels instead of red accents */
 .collaborations .section-top .eyebrow{color:#d2d0cb}
 .collaborations .collaboration-copy .collaboration-invite{color:#f5f4ef}
+
+/* Quiet editorial microcopy: reserve red for signature accents and interaction */
+.section-top .eyebrow{color:#c4c2bd}
+.athlete-lines .athlete-last{color:#f5f4ef}
+.collaborations .collaboration-copy .collaboration-invite{color:#f5f4ef}
