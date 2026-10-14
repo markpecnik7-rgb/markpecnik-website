@@ -251,3 +251,15 @@ footer{border-top:1px solid #38302b}
  .hero-content{bottom:82px}
  .athlete .facts article{grid-template-columns:minmax(105px,39%) minmax(0,1fr);column-gap:12px}
 }
+
+/* Mobile achievement overlap fix: figure caption must sit above all rows */
+@media(max-width:760px){
+ .athlete .athlete-grid figure{overflow:visible}
+ .athlete .athlete-grid figure::after{bottom:auto;height:clamp(310px,89vw,425px)}
+ .athlete .athlete-grid figcaption{display:block;position:relative;z-index:3;margin:13px 0 0;line-height:1.5;color:#aaa}
+ .athlete .facts{margin-top:36px}
+ .athlete .facts article{position:relative;border-top:1px solid #494949!important;min-height:92px}
+ .athlete .facts article:first-child{padding-top:20px}
+ .athlete .facts strong,.athlete .facts span,.athlete .facts small{position:relative;z-index:1}
+ .athlete .facts strong{line-height:1.2}
+}
