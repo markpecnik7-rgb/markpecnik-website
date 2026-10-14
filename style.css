@@ -271,3 +271,12 @@ footer{border-top:1px solid #38302b}
  .athlete .facts article:first-child{padding-top:23px}
  .athlete{padding-bottom:40px}
 }
+
+/* Mobile editorial hierarchy and clean achievement separation */
+@media(max-width:760px){
+ .section-top .eyebrow{font-size:13px;letter-spacing:.15em;font-weight:700;line-height:1.5}
+ .athlete .athlete-grid figcaption{font-size:14px;line-height:1.5;margin-top:16px;margin-bottom:24px}
+ .athlete .facts{margin-top:28px}
+ .athlete .facts article:first-child{border-top:0!important;padding-top:20px}
+ .athlete .facts article{border-top-color:#484848!important}
+}
