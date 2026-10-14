@@ -31,3 +31,11 @@
 .contact .contact-button:hover{background:#e4d2ca;color:#101010}
 .contact-instagram{display:inline-block;margin-top:25px;text-decoration:underline;text-underline-offset:5px;color:#f5f4ef;font-size:15px}
 .contact-instagram:hover{color:#e4d2ca}
+
+/* Contact: lively muted terracotta, softer than the original bright red */
+.contact{background:#a65340;color:#fffaf5}
+.contact p{color:#fff0e8}
+.contact .contact-button{background:#171514;color:#fffaf5}
+.contact .contact-button:hover{background:#33201a;color:#fffaf5}
+.contact-instagram{color:#fffaf5}
+.contact-instagram:hover{color:#f7d7c6}
