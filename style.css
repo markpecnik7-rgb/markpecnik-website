@@ -66,3 +66,17 @@
   .athlete .facts .fact-international{font-size:clamp(20px,4.8vw,27px)}
   .athlete-lines p{font-size:18px}
 }
+
+/* Editorial photo integration: soft edges that blend into each section */
+.athlete .athlete-grid figure,.coaching .coach-grid figure,.collaborations .collaborations-photo{position:relative;isolation:isolate;overflow:hidden}
+.athlete .athlete-grid figure img,.coaching .coach-grid figure img,.collaborations .collaborations-photo img{display:block;position:relative;z-index:0;transition:transform .55s ease}
+.athlete .athlete-grid figure::after,.coaching .coach-grid figure::after,.collaborations .collaborations-photo::after{content:"";position:absolute;z-index:1;pointer-events:none;inset:0}
+.athlete .athlete-grid figure::after{background:linear-gradient(90deg,#101010 0%,transparent 24%),linear-gradient(0deg,#101010 0%,transparent 25%),linear-gradient(180deg,#101010 0%,transparent 14%)}
+.coaching .coach-grid figure::after{background:linear-gradient(270deg,#171717 0%,transparent 23%),linear-gradient(0deg,#171717 0%,transparent 22%),linear-gradient(180deg,#171717 0%,transparent 13%)}
+.collaborations .collaborations-photo::after{background:linear-gradient(90deg,#101010 0%,transparent 17%),linear-gradient(270deg,#101010 0%,transparent 20%),linear-gradient(0deg,#101010 0%,transparent 21%)}
+.athlete .athlete-grid figcaption,.coaching .coach-grid figcaption{position:relative;z-index:2}
+@media(max-width:760px){
+ .athlete .athlete-grid figure::after{background:linear-gradient(0deg,#101010 0%,transparent 22%),linear-gradient(180deg,#101010 0%,transparent 12%)}
+ .coaching .coach-grid figure::after{background:linear-gradient(0deg,#171717 0%,transparent 22%),linear-gradient(180deg,#171717 0%,transparent 12%)}
+ .collaborations .collaborations-photo::after{background:linear-gradient(0deg,#101010 0%,transparent 19%),linear-gradient(180deg,#101010 0%,transparent 10%)}
+}
