@@ -199,3 +199,55 @@ footer{border-top:1px solid #38302b}
  .hero{min-height:650px}
  .hero-bottom{font-size:9px}
 }
+
+/* Mobile redesign v2: intentional composition, compact vertical rhythm */
+@media(max-width:760px){
+ header{min-height:94px;padding-top:10px;padding-bottom:10px;row-gap:5px}
+ header>nav{padding-top:8px}
+ .hero{min-height:0;height:min(790px,calc(100svh - 94px));max-height:none}
+ .hero-photo img{object-position:50% 28%}
+ .hero-photo:after{background:linear-gradient(0deg,#101010 0%,rgba(16,16,16,.96) 7%,rgba(16,16,16,.75) 24%,rgba(16,16,16,.10) 64%),linear-gradient(90deg,rgba(16,16,16,.2),transparent 70%)}
+ .hero-content{position:absolute;left:6%;right:6%;bottom:87px;padding:0}
+ h1{font-size:clamp(56px,15.8vw,100px);line-height:.88}
+ .hero .roles{margin-top:19px}
+ .hero-coach + .hero-tagline{margin-top:10px}
+ .hero-bottom{bottom:19px}
+ .section{padding-top:64px;padding-bottom:70px}
+ .section-top{margin-bottom:26px}
+ .athlete-grid{gap:24px}
+ .athlete-grid h2{margin-bottom:24px}
+ .athlete-lines p{margin-bottom:9px}
+ .athlete-lines .athlete-last{margin-top:18px}
+ .athlete .athlete-grid figure{margin-top:4px}
+ .athlete img{height:clamp(310px,89vw,425px);object-position:50% 38%}
+ .athlete .facts{display:grid;grid-template-columns:1fr;gap:0;margin-top:28px}
+ .athlete .facts article{display:grid;grid-template-columns:minmax(115px,40%) minmax(0,1fr);column-gap:16px;row-gap:5px;align-items:start;padding:18px 0 20px;border-top:1px solid #494949}
+ .athlete .facts strong{grid-row:1 / span 2;font-size:clamp(22px,6vw,30px);line-height:1.15;overflow-wrap:normal}
+ .athlete .facts .fact-international{font-size:clamp(19px,5vw,25px)}
+ .athlete .facts span{margin-top:0;font-size:14px;line-height:1.45}
+ .athlete .facts small{margin-top:0;font-size:12px}
+ .coaching .section-intro{margin-bottom:10px}
+ .coaching .coach-grid{gap:24px}
+ .coaching .coaching-copy p{margin-bottom:14px}
+ .coaching .coach-grid img{height:clamp(280px,82vw,380px)}
+ .coaching .price{margin-top:25px}
+ .collaborations-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+ .collaborations-content{display:contents}
+ .collaborations-content h2{order:1;margin:0 0 24px;font-size:clamp(40px,10.2vw,62px)}
+ .collaborations-photo{order:2;margin:0 0 23px}
+ .collaborations-photo img{height:clamp(310px,86vw,410px);object-position:center 46%}
+ .collaborations-content>div{order:3}
+ .collaborations .collaboration-copy p{line-height:1.65}
+ .collaborations .collaboration-copy .collaboration-invite{margin-top:17px}
+ .collaborations .contact-button{margin-top:18px}
+ .contact{padding-top:62px;padding-bottom:62px}
+ .contact h2{font-size:clamp(49px,12vw,72px);margin-top:23px;margin-bottom:24px}
+ .contact p{line-height:1.55}
+ .contact-actions{gap:7px}
+ .contact-actions .contact-button{margin-top:12px}
+}
+@media(max-width:370px){
+ .hero{height:calc(100svh - 94px);min-height:580px}
+ .hero-content{bottom:82px}
+ .athlete .facts article{grid-template-columns:minmax(105px,39%) minmax(0,1fr);column-gap:12px}
+}
