@@ -136,3 +136,7 @@ footer{border-top:1px solid #38302b}
  .coaching .section-intro{margin-bottom:14px}
  .coaching .coach-grid{gap:24px}
 }
+
+/* Collaborations: neutral editorial labels instead of red accents */
+.collaborations .section-top .eyebrow{color:#d2d0cb}
+.collaborations .collaboration-copy .collaboration-invite{color:#f5f4ef}
