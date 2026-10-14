@@ -39,3 +39,8 @@
 .contact .contact-button:hover{background:#33201a;color:#fffaf5}
 .contact-instagram{color:#fffaf5}
 .contact-instagram:hover{color:#f7d7c6}
+
+/* Hero: athlete-first identity and tagline */
+.hero .roles{margin-bottom:0;font-weight:600;color:#f5f4ef}
+.hero-tagline{font-size:clamp(17px,2vw,23px);font-style:italic;color:#d5d1ca;margin:10px 0 0;line-height:1.4;max-width:440px}
+@media(max-width:760px){.hero-tagline{font-size:17px;margin-top:8px}}
