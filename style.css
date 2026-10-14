@@ -312,3 +312,8 @@ footer{border-top:1px solid #38302b}
  .coaching-actions .contact-button{display:block;width:100%;text-align:center}
  .coaching-email{display:block;text-align:center;font-size:13px;line-height:1.5}
 }
+
+/* Unified hero role line */
+.hero .roles{font-family:var(--display);font-weight:700;color:#f5f4ef;font-size:clamp(22px,2.55vw,34px);line-height:1.2;max-width:720px;letter-spacing:-.025em}
+.hero .hero-tagline{margin-top:14px;color:#bdbbb7;font-size:clamp(15px,1.45vw,18px);font-weight:400;font-style:italic}
+@media(max-width:760px){.hero .roles{font-size:clamp(18px,4.8vw,24px);max-width:100%;line-height:1.3;margin-top:20px}.hero .hero-tagline{font-size:14px;margin-top:10px}}
