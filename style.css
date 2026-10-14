@@ -295,3 +295,20 @@ footer{border-top:1px solid #38302b}
  .athlete .facts article:first-child{border-top:none!important;padding-top:0!important}
  .athlete .facts article{margin:0;padding:21px 0 23px;min-height:0;align-items:start;border-top:1px solid #484848!important}
 }
+
+/* Stronger coaching identity in hero and frictionless training contact */
+.hero-coach{color:#fff;font-family:var(--display);font-size:clamp(22px,2.5vw,32px);font-weight:700;line-height:1.15;letter-spacing:-.035em;margin-top:8px}
+.hero-tagline{color:#aaa;font-size:clamp(14px,1.35vw,17px);font-weight:400;font-style:italic}
+.hero-coach + .hero-tagline{margin-top:17px}
+.coaching-actions{display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-top:25px}
+.coaching-actions .contact-button{margin-top:0}
+.coaching-email{font-size:14px;color:#d5d1ca;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.coaching-email:hover{color:#fff}
+@media(max-width:760px){
+ .hero-coach{font-size:clamp(22px,6.2vw,29px);margin-top:9px}
+ .hero-tagline{font-size:14px}
+ .hero-coach + .hero-tagline{margin-top:12px}
+ .coaching-actions{align-items:stretch;gap:16px;margin-top:22px}
+ .coaching-actions .contact-button{display:block;width:100%;text-align:center}
+ .coaching-email{display:block;text-align:center;font-size:13px;line-height:1.5}
+}
