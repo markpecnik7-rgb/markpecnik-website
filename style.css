@@ -145,3 +145,57 @@ footer{border-top:1px solid #38302b}
 .section-top .eyebrow{color:#c4c2bd}
 .athlete-lines .athlete-last{color:#f5f4ef}
 .collaborations .collaboration-copy .collaboration-invite{color:#f5f4ef}
+
+/* Mobile-first refinement, desktop design intentionally untouched */
+@media(max-width:760px){
+ html{scroll-padding-top:112px}
+ header{height:auto;min-height:102px;display:grid;grid-template-columns:1fr auto;grid-template-areas:"brand languages" "nav nav";align-items:center;column-gap:12px;row-gap:8px;padding:13px 6% 12px}
+ header>.brand{grid-area:brand;justify-self:start}
+ header>.languages{grid-area:languages;justify-self:end}
+ header>nav{grid-area:nav;display:flex;width:100%;justify-content:space-between;gap:12px;padding-top:10px;border-top:1px solid #303030;font-size:13px}
+ header>nav a{white-space:nowrap}
+ .hero{height:auto;min-height:690px;max-height:none;display:flex;flex-direction:column;justify-content:flex-end}
+ .hero-photo{inset:0;z-index:0}
+ .hero-photo img{object-position:53% 22%}
+ .hero-photo:after{background:linear-gradient(0deg,#101010 1%,rgba(16,16,16,.97) 15%,rgba(16,16,16,.78) 39%,rgba(16,16,16,.12) 72%),linear-gradient(90deg,rgba(16,16,16,.24),transparent 75%)}
+ .hero-content{position:relative;top:auto;bottom:auto;left:auto;right:auto;padding:340px 6% 96px;z-index:1}
+ h1{font-size:clamp(57px,15.8vw,104px);letter-spacing:-.085em;line-height:.9}
+ .hero .roles{margin-top:23px;font-size:clamp(16px,4.3vw,19px)}
+ .hero-coach{font-size:15px}
+ .hero-coach + .hero-tagline{margin-top:13px}
+ .hero-tagline{font-size:16px}
+ .hero-bottom{bottom:23px;left:6%;right:6%;gap:12px;font-size:10px}
+ .hero-bottom a{white-space:nowrap}
+ .section{padding-left:6%;padding-right:6%;overflow-wrap:break-word}
+ .section-top{margin-bottom:30px}
+ .athlete-grid{gap:30px}
+ .athlete-grid h2{margin-bottom:24px}
+ .athlete img{height:clamp(320px,105vw,490px)}
+ .athlete .facts{margin-top:34px;gap:22px 14px}
+ .athlete .facts strong{overflow-wrap:anywhere}
+ .coaching .section-intro{margin-bottom:15px}
+ .coaching .coach-grid{gap:26px}
+ .coaching .coaching-copy p{line-height:1.65}
+ .coaching .coach-grid img{height:clamp(270px,85vw,390px)}
+ .price{margin-top:30px}
+ .coaching>.contact-button{display:flex;width:100%;justify-content:center;text-align:center;margin-top:22px}
+ .coaching>.contact-button + a{display:block!important;margin:18px 0 0!important;text-align:center}
+ .collaborations-grid{gap:26px}
+ .collaborations-photo img{height:clamp(300px,98vw,460px)}
+ .collaborations-content h2{margin-bottom:25px}
+ .collaborations .collaboration-copy p{text-align:left;line-height:1.7}
+ .collaborations .collaboration-copy .collaboration-invite{margin-top:20px}
+ .collaborations .contact-button{display:block;text-align:center;width:100%}
+ .contact h2{margin-top:26px;line-height:1}
+ .contact-actions{gap:16px;align-items:stretch;flex-direction:column}
+ .contact-actions .contact-button{display:block;width:100%;text-align:center;margin-top:16px}
+ .contact-instagram{margin-top:0;text-align:center;padding:12px}
+ footer{gap:12px}
+}
+@media(max-width:370px){
+ header>nav{font-size:11px;gap:8px}
+ h1{font-size:15.2vw}
+ .hero-content{padding-top:300px}
+ .hero{min-height:650px}
+ .hero-bottom{font-size:9px}
+}
