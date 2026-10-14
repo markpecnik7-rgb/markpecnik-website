@@ -1,5 +1,7 @@
 const languageButtons = document.querySelectorAll('[data-lang]');
-let language = localStorage.getItem('language') === 'en' ? 'en' : 'sl';
+let savedLanguage = 'sl';
+try { savedLanguage = localStorage.getItem('language') === 'en' ? 'en' : 'sl'; } catch (_) { /* Storage may be disabled */ }
+let language = savedLanguage;
 
 function setLanguage(next) {
   language = next;
@@ -19,7 +21,9 @@ function setLanguage(next) {
   document.querySelector('meta[name="description"]').content = next === 'sl'
     ? 'Mark Pečnik, profesionalni igralec odbojke na mivki in trener iz Slovenije. Treningi, športna pot in sodelovanja.'
     : 'Mark Pečnik, professional beach volleyball athlete and coach from Slovenia. Coaching, career and collaborations.';
-  localStorage.setItem('language', next);
+  const facts = document.querySelector('.facts');
+  if (facts) facts.setAttribute('aria-label', next === 'sl' ? 'Dosežki in nastopi' : 'Achievements and appearances');
+  try { localStorage.setItem('language', next); } catch (_) { /* Continue without persistence */ }
 }
 
 languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
