@@ -280,3 +280,6 @@ footer{border-top:1px solid #38302b}
  .athlete .facts article:first-child{border-top:0!important;padding-top:20px}
  .athlete .facts article{border-top-color:#484848!important}
 }
+
+/* Hide athlete photo caption only on phones */
+@media(max-width:760px){.athlete .athlete-grid figcaption{display:none!important}.athlete .facts{margin-top:24px}}
