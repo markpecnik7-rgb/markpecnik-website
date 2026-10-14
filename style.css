@@ -263,3 +263,11 @@ footer{border-top:1px solid #38302b}
  .athlete .facts strong,.athlete .facts span,.athlete .facts small{position:relative;z-index:1}
  .athlete .facts strong{line-height:1.2}
 }
+
+/* Final mobile athlete spacing refinement */
+@media(max-width:760px){
+ .athlete .athlete-grid figcaption{margin-bottom:20px}
+ .athlete .facts{margin-top:18px}
+ .athlete .facts article:first-child{padding-top:23px}
+ .athlete{padding-bottom:40px}
+}
